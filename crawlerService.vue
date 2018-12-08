@@ -183,7 +183,7 @@
         }).then(() =>{
           ids = ids.join(',');
           delCrawler(ids).then(() => {
-            this.tableData.splice( this.row, ids.length)
+            this.getCrawlerService()
           }).catch(()=>{})
         }).catch(()=>{});
       },
